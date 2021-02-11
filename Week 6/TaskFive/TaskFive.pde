@@ -29,7 +29,7 @@ void MethodOne()
 */
 void MethodTwo() 
 {
-  int weekDay = 0; // 0 = Monday, 6 = Sunday. 
+  int weekDay = (int) random(7); // 0 = Monday, 6 = Sunday. 
   boolean weekend = false;
   String weekdays[] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
   
