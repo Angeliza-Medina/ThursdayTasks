@@ -9,7 +9,7 @@ class Main{
   }
 
   public static void printEmptyLine(){
-    System.out.println("");
+    System.out.println();
   }
 
   public static void printString(String yourString){
