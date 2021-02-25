@@ -71,5 +71,8 @@ Opgaverne skal ligesom sidste uge, afleveres på moodle, via et link til jeres g
 
     5.c Create a similar function to that of 5.b, but instead of receiving the array and an integer, it receives the array and a string. Loop through all elements in the array until you find the element with the name received as a parameter. Then return the index of that student. Call this method with different names from the main method of Datamatik
 
+
+## Task 6 /*
+    Start en ny java fil med din tekst editor og sæt koden fra 'debug' ind i filen. Gem filen med det rigtige navn og compile klassen - du vil se at der er 7 fejl. Fix dem. '
     
 
