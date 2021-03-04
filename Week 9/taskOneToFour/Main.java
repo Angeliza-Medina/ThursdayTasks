@@ -45,10 +45,10 @@ public class Main {
 
          for(int k = 0; k < text2[j].length; k++){ // [j] is the line we're currently on. [k] represents a sentences inside line[j]
 
-            if(k < text2[j].length - 1){
-               longestSentence = matchForLongestSentence(text2[j][k], text2[j][k+1]);
-            }
-         }
+          if(k < text2[j].length){
+              longestSentence = matchForLongestSentence(longestSentence, text2[j][k]);
+          }
+        }
 
          j++;
 
