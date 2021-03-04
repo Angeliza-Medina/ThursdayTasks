@@ -105,8 +105,8 @@ public class Main {
    - Inside we have a forEach loop
    - For each word on line[i] do following...
    - Compare the start of each word with our pattern
-   */ //Explanation of printWordsStartingWith()
-
+   */
+  
    private static void printWordsOfLength(int wordLength){
       boolean wordIsValid = true;
 
@@ -133,7 +133,7 @@ public class Main {
    - For each word on every line, check if the length of the word matches our specified length
    - If the length matches, but the word contains either "," or "." as the third character, deem the word invalid
    - If the word is still valid print it
-   */ //Explanation of printWordsOfLength()
+   */
 
    public static void printWordsWithDoubleConsonant(){
       boolean isValid = false;
@@ -164,7 +164,7 @@ public class Main {
    - As long as we aren't at the last character of a word, compare a character to the one that follows it
    - If two neighboring characters are identical, check if those two are valid characters with checkIfValid()
    - If boolean isValid is true, print the word
-   */ //Explanation of printWordsWithDoubleConsonant()
+   */
 
    public static boolean checkIfValid(char charToCheck){
       char[] vowels = {'a', 'e', 'i', 'o', 'u', 'y', 'æ', 'ø', 'å'};
@@ -217,22 +217,12 @@ public class Main {
    }
 
    public static void printIfPalindrome(String stringToBeChecked){
-      String ourString = stringToBeChecked.toLowerCase();
-      String ourStringInReverse = "";
+    String ourString = stringToBeChecked.toLowerCase();
+    String ourStringInReverse = new StringBuilder(ourString).reverse().toString();
 
-      byte[] byteArr = ourString.getBytes();
-      byte[] result = new byte[byteArr.length];
-
-      for (int i = 0; i < byteArr.length; i++){
-         result[i] = byteArr[byteArr.length - i - 1];
-      }
-
-      ourStringInReverse = new String(result);
-
-      if(ourString.equals(ourStringInReverse)){
-         System.out.println(ourStringInReverse);
-      }
-
+    if(ourString.equals(ourStringInReverse)){
+       System.out.println(ourStringInReverse);
+    }
    }
 
 }
